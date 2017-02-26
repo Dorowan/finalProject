@@ -11,7 +11,26 @@
 
     <div id ="junk"></div>
 
-    Please feel free to use this to figure out how much time you waste traveling instead of enjoying stuff.
+    <button type="button" onclick="myFunction()">Calculate Time</button>
+
+    <script>
+    function myFunction() {
+        var x;
+        var text = "Input OK";
+
+        //Get the value of input field with id="numb"
+        x = document.getElementById("rush").value;
+
+        // If x is not a Date, or x is a date less than 30 days before
+        //today's date, or x is greater than 30 days after today's date
+
+        if (isNaN(x) || x < 1 || x > 10) {
+            text = "Not valid";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+  <p>Please feel free to use this to figure out how much time you waste traveling instead of enjoying stuff.</p>
 
     <script src="app.js"></script>
   </body>

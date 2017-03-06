@@ -5,20 +5,51 @@
     <title>Return Journey</title>
 
     <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/ui-lightness/jquery-ui.css" />
+
   </head>
 
   <body>
 
-    <div id ="junk"></div>
+    <div id ="move"></div>
 
-    <button type="button" onclick="myFunction()">Calculate Time</button>
+<!-- //Create field for departing data to live in briefly -->
 
-    <script>
+    <h1>Enter Departing City</h1>
+    <form name="form1" action="#" onsubmit="required()">
+
+    <input id="departcity" type='text' name ='text1'/>
+    <class="rq">*Requisite Field
+
+<!-- //Create field for arriving data to live in briefly -->
+
+    <h1>Enter Arriving City</h1>
+
+    <form name="form2" action="#" onsubmit="required()">
+
+    <input id="arrivalcity" type='text' name ='text2'/>
+    <class="rq">*Requisite Field
+
+<!-- //Create a button to execute the function comprising the above -->
+
+<p>
+    <center><button id="calctime">Calculate The Time</button></center>
+
+    </form>
+
+    <script
+      src="http://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+    <!-- <script>
     function myFunction() {
         var x;
         var text = "Input OK";
 
-        //Get the value of input field with id="numb"
+        //Get the value of input field with id="rush"
         x = document.getElementById("rush").value;
 
         // If x is not a Date, or x is a date less than 30 days before
@@ -27,9 +58,10 @@
         if (isNaN(x) || x < 1 || x > 10) {
             text = "Not valid";
         }
+
         document.getElementById("demo").innerHTML = text;
     }
-    </script>
+    </script> -->
   <p>Please feel free to use this to figure out how much time you waste traveling instead of enjoying stuff.</p>
 
     <script src="app.js"></script>
